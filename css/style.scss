@@ -829,21 +829,6 @@ footer {
 }
 
 
-
-// Адаптация
-
-// @media (max-width: 480px){
-//     .header__planta {
-//         margin: 35.5px 142px 0 142px;
-//         flex-wrap: wrap;
-//         justify-content: space-between;
-//     }
-
-//     .conteiner1 {
-//         flex-wrap: wrap;
-//         justify-content:center
-// }
-
 /* ============================================ */
 /* АДАПТАЦИЯ ДЛЯ IPHONE 12 PRO (до 430px) */
 /* ============================================ */
@@ -856,28 +841,27 @@ footer {
 
     .header_1 {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
     }
 
     .header__planta {
-        margin: 0; /* Убираем огромные отступы */
-        width: 90px; /* Автоширина */
+        margin: 0;
+        width: 90px;
         height: auto;
     }
 
     .header__planta img {
-        width: 80px; /* Уменьшаем логотип */
+        width: 80px;
         height: auto;
     }
 
     .header__get_the_app {
-        margin: 0; /* Убираем отступы */
+        margin: 0;
         font-size: 0.6875em;
         padding: 5px 12px;
-        white-space: nowrap; /* Чтобы текст не переносился */
+        white-space: nowrap;
     }
 
     .header_1 .header__support {
@@ -887,26 +871,26 @@ footer {
 
     /* === Блок 1 (Экран приветствия) === */
     .conteiner1 {
-        flex-direction: column; /* Ставим текст над телефоном */
+        flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
     .all__content1 {
-        margin-right: 0; /* Убираем большой отступ */
+        margin-right: 0;
         text-align: center;
         order: 1;
     }
 
     .all__text1 {
-        margin-top: 30px; /* Убираем 224px */
+        margin-top: 30px;
     }
 
     .conteiner1__headline {
-        font-size: 3.5em; /* Уменьшаем с 6.25em */
-        width: auto; /* Убираем фикс. ширину */
+        font-size: 3.5em;
+        width: auto;
         height: auto;
-        line-height: 1.2; /* Делаем нормальный межстрочник */
+        line-height: 1.2;
         text-align: center;
     }
 
@@ -926,16 +910,16 @@ footer {
     }
 
     .store__1 img {
-        width: 120px; /* Уменьшаем кнопки App Store */
+        width: 120px;
         height: auto;
     }
 
-    /* Телефон и абсолютные иконки - переделываем */
+    /* Телефон */
     .phone {
-        position: relative; /* Было absolute, меняем на relative */
-        width: 270px; /* Уменьшаем размер телефона */
+        position: relative;
+        width: 270px;
         height: auto;
-        margin: 30px auto 0 auto; /* Центрируем */
+        margin: 30px auto 0 auto;
         left: auto;
         display: block;
         order: 2;
@@ -945,8 +929,7 @@ footer {
         display: none;
     }
 
-/* === КАРТИНКИ С ТЕКСТОМ - ПОЛНОСТЬЮ ИСПРАВЛЕНО === */
-/* Общий контейнер для блоков 2-5 */
+/* === КАРТИНКИ С ТЕКСТОМ === */
     .all__content2,
     .all__content3,
     .all__content4,
@@ -959,22 +942,20 @@ footer {
         padding: 0 15px;
     }
 
-/* Родительский контейнер для картинки и текста */
     .watering,
     .foto__plants,
     .room__plants,
     .Change {
         position: relative !important;
-        width: 300px !important; /* Фиксированная ширина */
-        height: 300px !important; /* Фиксированная высота */
+        width: 300px !important;
+        height: 300px !important;
         margin: 0 auto !important;
         display: block !important;
-        // border-radius: 40px;
-        overflow: hidden; /* Чтобы ничего не вылезало за границы */
+        overflow: hidden;
         order: 1;
     }
 
-/* Сама картинка (фон) */
+/* Сама картинка */
     .watering img,
     .foto__plants img,
     .room__plants img,
@@ -985,25 +966,16 @@ footer {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
-        // border-radius: 40px;
         z-index: 1;
     }
 
 
 
-/* Иконка (лейка, камера и т.д.) */
+/* Иконка */
     #watering_text__img,
     #foto__plants_text__img,
     #room__plants__text__img,
     #Change__text__img {
-        // position: absolute !important;
-        // width: 35px !important;
-        // height: 35px !important;
-        // top: 15px !important;
-        // left: 15px !important;
-        // margin: 0 !important;
-        // z-index: 3 !important;
-        // object-fit: contain;
         display: none;
     }
 
@@ -1012,35 +984,9 @@ footer {
     #foto__plants_text__p,
     #room__plants__text__p,
     #Change__text__p {
-        // position: absolute !important;
-        // background-color: white !important;
-        // border-radius: 9999px !important;
-        // font-family: regular, sans-serif !important;
-        // font-size: 14px !important;
-        // padding: 8px 15px 8px 40px !important;
-        // top: 12px !important;
-        // left: 12px !important;
-        // margin: 0 !important;
-        // white-space: nowrap !important;
-        // z-index: 2 !important;
-        // box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
-        // min-width: auto !important;
-        // width: auto !important;
-        // max-width: 160px;
-        // line-height: 1.2;
         display: none;
     }
 
-/* Специально для разных блоков, если нужно сместить */
-#room__plants__text__p {
-        top: 220px !important; /* Для комнатных растений текст внизу */
-    }
-
-#Change__text__p {
-        top: 200px !important; /* Для блока Change текст ниже */
-    }
-
-/* Контейнер для текста справа от картинки */
     .all__text2,
     .all__text3,
     .all__text4,
@@ -1078,10 +1024,6 @@ footer {
         margin: 15px auto 0 !important;
         display: inline-block;
     }
-/* Специально для текста в блоке Change (5-й блок), если он съезжает */
-// #Change__text__p {
-//     padding: 8px 15px 8px 45px !important;
-// }
 
     /* === Комментарии === */
     .people__saying {
@@ -1132,7 +1074,7 @@ footer {
 
     /* === Сетка растений === */
     .all__content6 {
-        grid-template-columns: repeat(2, 185px); /* Две колонки */
+        grid-template-columns: repeat(2, 185px);
         grid-template-rows: repeat(4, 185px);
         grid-template-areas: 
             "x y"
@@ -1194,7 +1136,6 @@ footer {
     }
 
     #plus5{
-        // z-index: 0;
         margin: 145px 0 0 330px;
         height: 29px;
         width: 29px;
@@ -1262,7 +1203,7 @@ footer {
     }
 
     .getPlanta {
-        margin: 30px 0 0 0; /* Убираем большой отступ */
+        margin: 30px 0 0 0;
         text-align: center;
     }
 }
