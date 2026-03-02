@@ -1069,7 +1069,6 @@ footer {
     padding-left: 15px;
   }
   .comments__people {
-    flex-direction: column;
     align-items: center;
     gap: 15px;
     padding: 0 20px;
